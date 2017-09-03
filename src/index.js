@@ -11,6 +11,9 @@ async function captureElement(
     const page = await browser.newPage()
     await page.goto(url)
 
+    // for Big element
+    await page.setViewport({ width: 1024, height: 3000 })
+
     await page.waitFor(target)
 
     const clip = await page.evaluate(s => {
