@@ -1,6 +1,6 @@
 {
   "name": "capture-element",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "capture element using puppeteer",
   "license": "MIT",
   "repository": "akameco/capture-element",
@@ -22,8 +22,14 @@
     "test:watch": "jest --watch"
   },
   "main": "lib/index.js",
-  "files": ["lib"],
-  "keywords": ["puppeteer", "capture", "element"],
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "puppeteer",
+    "capture",
+    "element"
+  ],
   "dependencies": {
     "puppeteer": "^0.10.2"
   },
