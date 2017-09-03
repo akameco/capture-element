@@ -18,12 +18,12 @@ $ npm install capture-element
 const fs = require('fs');
 const captureElement = require('capture-element')
 
-const buffer = await captureElement(
+captureElement(
   'https://github.com/akameco',
   '.js-calendar-graph'
-)
-
-fs.writeFileSync(buffer, 'github.png')
+).then(buffer => {
+  fs.writeFileSync(buffer, 'github.png')
+})
 ```
 
 
