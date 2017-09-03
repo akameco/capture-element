@@ -1,0 +1,38 @@
+{
+  "name": "capture-element",
+  "version": "0.0.0",
+  "description": "capture element using puppeteer",
+  "license": "MIT",
+  "repository": "akameco/capture-element",
+  "author": {
+    "name": "akameco",
+    "email": "akameco.t@gmail.com",
+    "url": "akameco.github.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "prettier": "prettier --write '**/*.js'",
+    "lint": "eslint src/",
+    "build": "babel src -d lib --ignore *.test.js",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "main": "lib/index.js",
+  "files": ["lib"],
+  "keywords": ["puppeteer", "capture", "element"],
+  "dependencies": {
+    "puppeteer": "^0.10.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.0",
+    "eslint-config-precure": "^0.8.0",
+    "flow-bin": "^0.54.0",
+    "jest": "^20.0.4",
+    "prettier": "^1.6.1"
+  }
+}
