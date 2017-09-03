@@ -10,7 +10,7 @@
     "url": "akameco.github.io"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6.10.0"
   },
   "scripts": {
     "prettier": "prettier --write '**/*.js'",
@@ -22,14 +22,8 @@
     "test:watch": "jest --watch"
   },
   "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
-  "keywords": [
-    "puppeteer",
-    "capture",
-    "element"
-  ],
+  "files": ["lib"],
+  "keywords": ["puppeteer", "capture", "element"],
   "dependencies": {
     "puppeteer": "^0.10.2"
   },
