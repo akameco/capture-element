@@ -17,7 +17,7 @@
     "lint": "eslint src/",
     "build": "babel src -d lib --ignore *.test.js",
     "postbuild": "flow-copy-source --ignore *.test.js src lib",
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch"
   },
